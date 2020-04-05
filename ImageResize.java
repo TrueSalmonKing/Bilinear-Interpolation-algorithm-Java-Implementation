@@ -46,7 +46,7 @@ public class ImageResize {
 		BufferedImage imageOut = null;
 		
 		try {
-			File file = new File("C:\\Users\\SalmonKing\\Desktop\\nambawansmol.png");
+			File file = new File("OriginalImage.png");
 			image = new BufferedImage(w,h, BufferedImage.TYPE_4BYTE_ABGR);
 			image = ImageIO.read(file);
 			w = image.getWidth();
@@ -68,7 +68,7 @@ public class ImageResize {
 		pixels = Resize(pixels,w,h,w2,h2);
 		
 		try {
-			File fileOut = new File("C:\\Users\\SalmonKing\\Desktop\\nambawansmol x2.png");
+			File fileOut = new File("ScaledImage.png");
 			imageOut = new BufferedImage(w2,h2, BufferedImage.TYPE_4BYTE_ABGR);
 			
 			for(int j=0;j<h2;j++) {
