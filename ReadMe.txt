@@ -3,17 +3,17 @@
 The algorithm used is the program, utilizes the bilinear interpolation, in order to either upscale, or downscale
 an image. Let's use the following 4 pixels below (we're taking the example of an upscale by 2, but this can be generalized for both upscaling and downscaling):
 
-				           <--------1------>
-				           <--w-->
-	xxxxxxxxx		     xxxxxxxxxxxxxxxxx ^ ^
-	x A x B x		     x A x a x ? x B x | |
-	xxxxxxxxx	--->	 xxxxxxxxxxxxxxxxx h |
-	x C x D	x		     x ? x ? x ? x ? x | |
-	xxxxxxxxx		     xxxxxxxxxxxxxxxxx | 1
-				           x ? x P x ? x ? x v |
-				           xxxxxxxxxxxxxxxxx   |
-				           x C x b x ? x D x   |
-				           xxxxxxxxxxxxxxxxx   v
+				<--------1------>
+			        <--w-->
+	xxxxxxxxx		xxxxxxxxxxxxxxxxx ^ ^
+	x A x B x		x A x a x ? x B x | |
+	xxxxxxxxx	--->	xxxxxxxxxxxxxxxxx h |
+	x C x D	x		x ? x ? x ? x ? x | |
+	xxxxxxxxx		xxxxxxxxxxxxxxxxx | 1
+				x ? x P x ? x ? x v |
+				xxxxxxxxxxxxxxxxx   |
+				x C x b x ? x D x   |
+				xxxxxxxxxxxxxxxxx   v
 
 Before we procceed, the notion of bilinear interpolation must be elaborated on, by bilinear we are simply refering to the application of linear interpolation
 with an extension onto functions with 2 variables. In this interpolation we apply linear interpolation on the x axis, then the y axis and we interpolate finally
