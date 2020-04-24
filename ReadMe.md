@@ -1,6 +1,6 @@
 							////// SalmonKing ///////
 
-The algorithm used is the program, utilizes the bilinear interpolation, in order to either upscale, or downscale
+The algorithm used in the program, utilizes the bilinear interpolation, in order to either upscale, or downscale
 an image. Let's use the following 4 pixels below (we're taking the example of an upscale by 2, but this can be generalized for both upscaling and downscaling):
 
 				<--------1------>
