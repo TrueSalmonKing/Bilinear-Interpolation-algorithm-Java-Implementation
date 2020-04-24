@@ -52,8 +52,6 @@ Finally we apply the bilinear interpolation to each channel of the pixel, if it'
 	alpha = ((A>>24 & 0xff)*(1-y2)*(1-x2) + (B>>24 & 0xff)*x2*(1-y2) + (C>>24 & 0xff)*y2*(1-x2) + (D>>24 & 0xff)*y2*x2);
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 This algorithm is unfit for upscaling or downscaling more than twice, as such if it's necessary, it is recommended to scale in succession. For example
 if we want to scale it from 400x400 to 1600x1600, it is better to scale it from 400x400 to 800x800 to 1600x1600. 
 	
